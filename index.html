@@ -1,33 +1,20 @@
-import React, { useState, useEffect } from "react";
-import { Button } from "@/components/ui/button";
+import React, { useEffect, useState } from "react";
 import { FaLeaf, FaPhone, FaEnvelope, FaMapMarkerAlt, FaBars } from "react-icons/fa";
 
 export default function SmartGreenTech() {
-  const [formData, setFormData] = useState({ name: "", email: "", message: "" });
-  const [submitted, setSubmitted] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
 
+  // Enable Smooth Scrolling
   useEffect(() => {
-    // เปิดใช้งาน Smooth Scrolling
     document.documentElement.style.scrollBehavior = "smooth";
   }, []);
-
-  const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log("Form Data Submitted:", formData);
-    setSubmitted(true);
-  };
 
   return (
     <div className="bg-white min-h-screen text-gray-900">
       {/* Navbar */}
       <nav className="bg-[#007A33] text-white p-4 flex justify-between items-center">
         <h1 className="text-lg font-bold">SmartGreenTech</h1>
-        <ul className={`md:flex space-x-6 ${menuOpen ? "block" : "hidden"} md:block`}>
+        <ul className="hidden md:flex space-x-6">
           <li><a href="#home" className="hover:underline">หน้าแรก</a></li>
           <li><a href="#about" className="hover:underline">เกี่ยวกับเรา</a></li>
           <li><a href="#services" className="hover:underline">บริการ</a></li>
@@ -38,85 +25,34 @@ export default function SmartGreenTech() {
           <FaBars />
         </button>
       </nav>
-
-      {/* Home Section */}
+      
+      {/* Sections */}
       <section id="home" className="p-8 bg-[#F2FFF5]">
         <h2 className="text-2xl font-semibold text-[#007A33]">ยินดีต้อนรับสู่ SmartGreenTech</h2>
-        <p className="mt-2 text-gray-700">ให้บริการเกี่ยวกับโซลูชันพลังงานสะอาด และการประกอบตู้ MDB</p>
+        <p>ให้บริการเกี่ยวกับโซลูชันพลังงานสะอาด และการประกอบตู้ MDB</p>
       </section>
-
-      {/* About Section */}
+      
       <section id="about" className="p-8">
         <h2 className="text-2xl font-semibold text-[#007A33]">เกี่ยวกับเรา</h2>
-        <p className="mt-2 text-gray-700">SmartGreenTech เป็นบริษัทชั้นนำด้านพลังงานสะอาด...</p>
+        <p>SmartGreenTech เป็นบริษัทชั้นนำด้านพลังงานสะอาด...</p>
       </section>
-
-      {/* Services Section */}
+      
       <section id="services" className="p-8 bg-[#F2FFF5]">
         <h2 className="text-2xl font-semibold text-[#007A33]">บริการของเรา</h2>
-        <ul className="list-disc ml-6 mt-2 text-gray-700">
+        <ul>
           <li>ออกแบบและติดตั้งระบบพลังงานแสงอาทิตย์</li>
           <li>ประกอบตู้ MDB และอุปกรณ์ไฟฟ้า</li>
           <li>ให้คำปรึกษาเกี่ยวกับพลังงานสะอาด</li>
         </ul>
       </section>
-
-      {/* Projects Section */}
-      <section id="projects" className="p-8">
-        <h2 className="text-2xl font-semibold text-[#007A33]">ผลงานของเรา</h2>
-        <p className="mt-2 text-gray-700">นี่คือตัวอย่างโครงการที่เราได้ดำเนินการ...</p>
-      </section>
-
-      {/* Contact Section */}
+      
       <section id="contact" className="p-8">
         <h2 className="text-2xl font-semibold text-[#007A33]">ติดต่อเรา</h2>
-        <div className="flex flex-col space-y-3 mt-4">
-          <p><FaMapMarkerAlt className="inline text-[#007A33]" /> 200/215 หมู่ 1 ตำบลบางเสาธง อำเภอบางเสาธง สมุทรปราการ 10570</p>
-          <p><FaPhone className="inline text-[#007A33]" /> 02-102-4255, 083-991-9690</p>
-          <p><FaEnvelope className="inline text-[#007A33]" /> marketing@smartgreentech.co.th</p>
-        </div>
-
-        {/* Contact Form */}
-        <div className="mt-6 p-6 bg-[#F2FFF5] shadow-md rounded-lg">
-          <h3 className="text-xl font-semibold text-[#007A33]">ส่งข้อความถึงเรา</h3>
-          {submitted ? (
-            <p className="text-green-700 mt-4">ขอบคุณที่ติดต่อเรา! เราจะตอบกลับโดยเร็วที่สุด</p>
-          ) : (
-            <form onSubmit={handleSubmit} className="mt-4 space-y-4">
-              <input
-                type="text"
-                name="name"
-                placeholder="ชื่อของคุณ"
-                value={formData.name}
-                onChange={handleChange}
-                required
-                className="w-full p-2 border border-gray-300 rounded"
-              />
-              <input
-                type="email"
-                name="email"
-                placeholder="อีเมลของคุณ"
-                value={formData.email}
-                onChange={handleChange}
-                required
-                className="w-full p-2 border border-gray-300 rounded"
-              />
-              <textarea
-                name="message"
-                placeholder="ข้อความของคุณ"
-                value={formData.message}
-                onChange={handleChange}
-                required
-                className="w-full p-2 border border-gray-300 rounded"
-              ></textarea>
-              <Button type="submit" className="bg-[#007A33] text-white px-6 py-2 rounded-xl">
-                ส่งข้อความ
-              </Button>
-            </form>
-          )}
-        </div>
+        <p><FaMapMarkerAlt className="inline text-[#007A33]" /> 200/215 หมู่ 1 ตำบลบางเสาธง อำเภอบางเสาธง สมุทรปราการ 10570</p>
+        <p><FaPhone className="inline text-[#007A33]" /> 02-102-4255, 083-991-9690</p>
+        <p><FaEnvelope className="inline text-[#007A33]" /> marketing@smartgreentech.co.th</p>
       </section>
-
+      
       {/* Footer */}
       <footer className="text-center p-4 bg-[#007A33] text-white">
         © 2025 SmartGreenTech. สงวนลิขสิทธิ์
