@@ -1,62 +1,51 @@
-import React, { useEffect, useState } from "react";
-import { FaLeaf, FaPhone, FaEnvelope, FaMapMarkerAlt, FaBars } from "react-icons/fa";
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartGreenTech</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
 
-export default function SmartGreenTech() {
-  const [menuOpen, setMenuOpen] = useState(false);
-
-  // Enable Smooth Scrolling
-  useEffect(() => {
-    document.documentElement.style.scrollBehavior = "smooth";
-  }, []);
-
-  return (
-    <div className="bg-white min-h-screen text-gray-900">
-      {/* Navbar */}
-      <nav className="bg-[#007A33] text-white p-4 flex justify-between items-center">
-        <h1 className="text-lg font-bold">SmartGreenTech</h1>
-        <ul className="hidden md:flex space-x-6">
-          <li><a href="#home" className="hover:underline">หน้าแรก</a></li>
-          <li><a href="#about" className="hover:underline">เกี่ยวกับเรา</a></li>
-          <li><a href="#services" className="hover:underline">บริการ</a></li>
-          <li><a href="#projects" className="hover:underline">ผลงาน</a></li>
-          <li><a href="#contact" className="hover:underline">ติดต่อเรา</a></li>
-        </ul>
-        <button className="md:hidden text-xl" onClick={() => setMenuOpen(!menuOpen)}>
-          <FaBars />
-        </button>
-      </nav>
-      
-      {/* Sections */}
-      <section id="home" className="p-8 bg-[#F2FFF5]">
-        <h2 className="text-2xl font-semibold text-[#007A33]">ยินดีต้อนรับสู่ SmartGreenTech</h2>
-        <p>ให้บริการเกี่ยวกับโซลูชันพลังงานสะอาด และการประกอบตู้ MDB</p>
-      </section>
-      
-      <section id="about" className="p-8">
-        <h2 className="text-2xl font-semibold text-[#007A33]">เกี่ยวกับเรา</h2>
-        <p>SmartGreenTech เป็นบริษัทชั้นนำด้านพลังงานสะอาด...</p>
-      </section>
-      
-      <section id="services" className="p-8 bg-[#F2FFF5]">
-        <h2 className="text-2xl font-semibold text-[#007A33]">บริการของเรา</h2>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <h1>SmartGreenTech</h1>
         <ul>
-          <li>ออกแบบและติดตั้งระบบพลังงานแสงอาทิตย์</li>
-          <li>ประกอบตู้ MDB และอุปกรณ์ไฟฟ้า</li>
-          <li>ให้คำปรึกษาเกี่ยวกับพลังงานสะอาด</li>
+            <li><a href="#home">หน้าแรก</a></li>
+            <li><a href="#about">เกี่ยวกับเรา</a></li>
+            <li><a href="#services">บริการ</a></li>
+            <li><a href="#projects">ผลงาน</a></li>
+            <li><a href="#contact">ติดต่อเรา</a></li>
         </ul>
-      </section>
-      
-      <section id="contact" className="p-8">
-        <h2 className="text-2xl font-semibold text-[#007A33]">ติดต่อเรา</h2>
-        <p><FaMapMarkerAlt className="inline text-[#007A33]" /> 200/215 หมู่ 1 ตำบลบางเสาธง อำเภอบางเสาธง สมุทรปราการ 10570</p>
-        <p><FaPhone className="inline text-[#007A33]" /> 02-102-4255, 083-991-9690</p>
-        <p><FaEnvelope className="inline text-[#007A33]" /> marketing@smartgreentech.co.th</p>
-      </section>
-      
-      {/* Footer */}
-      <footer className="text-center p-4 bg-[#007A33] text-white">
-        © 2025 SmartGreenTech. สงวนลิขสิทธิ์
-      </footer>
-    </div>
-  );
-}
+    </nav>
+
+    <!-- Sections -->
+    <section id="home">
+        <h2>ยินดีต้อนรับสู่ SmartGreenTech</h2>
+        <p>ให้บริการเกี่ยวกับโซลูชันพลังงานสะอาด และการประกอบตู้ MDB</p>
+    </section>
+
+    <section id="about">
+        <h2>เกี่ยวกับเรา</h2>
+        <p>SmartGreenTech เป็นบริษัทชั้นนำด้านพลังงานสะอาด...</p>
+    </section>
+
+    <section id="services">
+        <h2>บริการของเรา</h2>
+        <ul>
+            <li>ออกแบบและติดตั้งระบบพลังงานแสงอาทิตย์</li>
+            <li>ประกอบตู้ MDB และอุปกรณ์ไฟฟ้า</li>
+            <li>ให้คำปรึกษาด้านพลังงานสะอาด</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>ติดต่อเรา</h2>
+        <p>200/215 หมู่ 1 ตำบลบางเสาธง อำเภอบางเสาธง สมุทรปราการ 10570</p>
+        <p>โทร: 02-102-4255, 083-991-9690</p>
+        <p>Email: marketing@smartgreentech.co.th</p>
+    </section>
+
+</body>
+</html>
