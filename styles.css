@@ -1,11 +1,15 @@
 <link rel="stylesheet" href="styles.css">
 <style>
     .banner {
-        width: 100%;
-        height: 400px;
-        overflow: hidden;
-        position: relative;
-    }
+    width: 100%;
+    height: 400px; /* ลดขนาดความสูงจาก 500px เหลือ 400px ตามที่คุณแจ้ง */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
 
     .slides {
         display: flex;
