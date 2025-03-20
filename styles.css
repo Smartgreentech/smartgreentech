@@ -250,7 +250,7 @@
 }
 
 .footer-logo {
-    width: 60px;
+    width: 80px; /* ขนาดโลโก้ */
     margin-bottom: 10px;
 }
 
@@ -260,21 +260,23 @@
 }
 
 .footer-left button {
-    background-color: #006400; /* สีเขียว */
+    background-color: #006400; /* สีเขียวเข้ม */
     color: white;
     padding: 10px 20px;
     border: none;
     cursor: pointer;
     border-radius: 5px;
     margin-top: 10px;
+    transition: background-color 0.3s;
 }
 
 .footer-left button:hover {
-    background-color: #00FF7F; /* สีเขียวอ่อน */
+    background-color: #00FF7F; /* สีเขียวอ่อนเมื่อเอาเมาส์ไปวาง */
 }
 
 .footer-right .qr-code {
     width: 120px;
+    height: 120px;
     margin-bottom: 10px;
 }
 
@@ -284,4 +286,5 @@
     margin-top: 20px;
     font-size: 0.8em;
 }
+
 
