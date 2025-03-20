@@ -81,3 +81,45 @@
     font-size: 1em;
     color: #006400; /* เปลี่ยนเป็นสีเขียว */
 }
+/* Text Overlay on Banner */
+.banner-text {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    max-width: 600px;
+    z-index: 1;
+    animation: fadeIn 2s ease;
+}
+
+.banner-text h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.banner-text p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.banner-text button {
+    background-color: #006400; /* สีเขียว */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.banner-text button:hover {
+    background-color: #00FF7F; /* สีเขียวอ่อน */
+}
+
+/* Animation */
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(-20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
