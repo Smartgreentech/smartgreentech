@@ -1,56 +1,31 @@
 <link rel="stylesheet" href="styles.css">
 <style>
-    body {
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-}
-
-.banner {
+    .banner {
     width: 100%;
-    height: 700px;
-    overflow: hidden;
+    max-width: 1920px;
+    height: 700px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: relative;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 0px;
 }
 
 .slides {
     display: flex;
-    transition: transform 0.5s ease;
+    width: 300%; /* ปรับให้สามารถแสดงรูปภาพ 3 รูปต่อเนื่องกัน */
+    height: 100%;
+    animation: slide 12s infinite;
 }
 
 .slide {
-    min-width: 100%;
-    height: 700px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.slide img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
-}
-
-button.prev, button.next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0,0,0,0.5);
-    color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    border-radius: 50%;
-    z-index: 2;
-}
-
-button.prev {
-    left: 20px;
-}
-
-button.next {
-    right: 20px;
+    flex-shrink: 0;
+    background-size: cover;
+    background-position: center;
 }
 
 
