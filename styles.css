@@ -319,6 +319,19 @@
     margin: 0;
     color: #00FF7F; /* สีเขียวสด */
 }
+/* ส่วนกำหนดค่า QR Code */
+.qr-code img {
+    width: 120px; /* กำหนดขนาดความกว้าง */
+    height: 120px; /* กำหนดขนาดความสูง */
+    margin-bottom: 10px;
+}
+
+/* ไอคอน Facebook */
+.facebook-icon {
+    width: 40px;
+    height: 40px;
+    margin-top: 10px;
+}
 
 
 
