@@ -1,8 +1,9 @@
 <link rel="stylesheet" href="styles.css">
 <style>
     .banner {
-    width: 100vw; /* ความกว้างเต็มหน้าจอ */
-    height: 700px; /* ความสูงกำหนดเป็น 700px */
+    width: 100%;
+    max-width: 1500px; /* สามารถปรับค่าได้ตามต้องการ */
+    height: 700px; 
     display: flex;
     align-items: center;
     justify-content: center;
@@ -11,6 +12,7 @@
     overflow: hidden;
     border-radius: 0px;
 }
+
 
 
 
