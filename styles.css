@@ -302,6 +302,24 @@
     margin-top: 20px;
     font-size: 0.8em;
 }
+/* ทำให้ชื่อกับโลโก้อยู่ติดกัน */
+.logo-title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.logo-title img {
+    margin-right: 10px;
+    width: 40px; /* ขนาดโลโก้ */
+    height: auto;
+}
+
+.logo-title h3 {
+    margin: 0;
+    color: #00FF7F; /* สีเขียวสด */
+}
+
 
 
 
