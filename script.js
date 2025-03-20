@@ -7,8 +7,7 @@ function showSlide() {
     currentSlide++;
     if (currentSlide >= totalSlides) currentSlide = 0;
 
-    slides.style.transform = `translateX(-${currentSlide * 100}%)`;
+    slides.style.transform = `translateX(-${currentSlide * 100}vw)`;
 }
 
-// สไลด์อัตโนมัติทุก ๆ 3 วินาที
-setInterval(showSlide, 3000);
+setInterval(showSlide, 4000); // สไลด์จะเปลี่ยนทุก ๆ 4 วินาที
