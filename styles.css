@@ -3,7 +3,7 @@
     .banner {
     width: 100%;
     max-width: 1920px; /* ปรับตามที่คุณต้องการ */
-    height: 700px; 
+    height: 800px; 
     display: flex;
     align-items: center;
     justify-content: center;
