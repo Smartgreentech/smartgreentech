@@ -167,13 +167,14 @@
 
 .portfolio-item .label {
     position: absolute;
-    background-color: red;
+    background-color: #006400; /* เปลี่ยนจากสีแดงเป็นสีเขียว */
     color: white;
     padding: 5px 10px;
     border-radius: 5px;
     top: 10px;
     left: 10px;
 }
+
 
 .portfolio-item p {
     padding: 15px;
