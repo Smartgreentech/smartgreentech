@@ -1,78 +1,86 @@
 <!DOCTYPE html>
-<html lang="th">
+<html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SmartGreenTech</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer></script>
+    <title>SmartGreenTech - Header</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #E6F4EA;
+        }
+        header {
+            background-color: #006400;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+        .logo img {
+            width: 50px;
+            height: auto;
+            margin-right: 10px;
+        }
+        .logo h1 {
+            color: white;
+            margin: 0;
+            font-size: 1.5em;
+        }
+        nav {
+            display: flex;
+            gap: 30px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #00FF7F;
+        }
+        .maxpower-link {
+            display: flex;
+            align-items: center;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        .maxpower-link img {
+            width: 25px;
+            height: 25px;
+            margin-right: 8px;
+        }
+        .maxpower-link:hover {
+            color: #00FF7F;
+        }
+    </style>
 </head>
 <body>
-    <!-- Navbar -->
-    <nav class="navbar">
-        <div class="logo">SmartGreenTech</div>
-        <ul class="nav-links">
-            <li><a href="index.html">หน้าแรก</a></li>
-            <li><a href="about.html">เกี่ยวกับเรา</a></li>
-            <li><a href="services.html">บริการ</a></li>
-            <li><a href="projects.html">ผลงาน</a></li>
-            <li><a href="reviews.html">รีวิวจากลูกค้า</a></li>
-            <li><a href="contact.html">ติดต่อเรา</a></li>
-            <li><a href="https://www.maxpower-shop.com/" class="maxpower-btn" target="_blank">MaxPower</a></li>
-        </ul>
-    </nav>
-
-    <!-- Hero Section -->
-    <header class="hero">
-        <div class="hero-content">
-            <h1>พลังงานสะอาดเพื่ออนาคต</h1>
-            <p>SmartGreenTech ผู้นำด้านโซลาร์เซลล์ และพลังงานทางเลือก</p>
-            <a href="services.html" class="btn">ดูบริการของเรา</a>
+    <header>
+        <div class="logo">
+            <img src="https://i.imgur.com/41OKgyz.png" alt="SmartGreenTech Logo">
+            <h1>SmartGreenTech</h1>
         </div>
+        <nav>
+            <a href="#">หน้าแรก</a>
+            <a href="#">เกี่ยวกับเรา</a>
+            <a href="#">บริการ</a>
+            <a href="#">ผลงาน</a>
+            <a href="#">รีวิวจากลูกค้า</a>
+            <a href="#">ติดต่อเรา</a>
+        </nav>
+        <a class="maxpower-link" href="https://www.maxpower-shop.com/">
+            <img src="https://cdn-icons-png.flaticon.com/512/3144/3144456.png" alt="Cart">
+            Maxpower-Shop
+        </a>
     </header>
-
-    <!-- Home Section -->
-    <section id="home">
-        <h2>ยินดีต้อนรับสู่ SmartGreenTech</h2>
-        <p>เราให้บริการด้านพลังงานสะอาด โซลาร์เซลล์ และเทคโนโลยีเพื่อสิ่งแวดล้อม</p>
-        <img src="images/solar.jpg" alt="พลังงานแสงอาทิตย์">
-    </section>
-
-    <!-- Services Section -->
-    <section id="services">
-        <h2>บริการของเรา</h2>
-        <p>เรามีบริการออกแบบและติดตั้งโซลาร์เซลล์ ระบบไฟฟ้า และ LED ประหยัดพลังงาน</p>
-        <a href="services.html" class="btn">ดูรายละเอียด</a>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects">
-        <h2>ผลงานของเรา</h2>
-        <p>ชมโครงการติดตั้งระบบพลังงานสะอาดของเรา</p>
-        <a href="projects.html" class="btn">ดูผลงานทั้งหมด</a>
-    </section>
-
-    <!-- Reviews Section -->
-    <section id="reviews">
-        <h2>รีวิวจากลูกค้า</h2>
-        <p>ความคิดเห็นจากลูกค้าของเราเกี่ยวกับบริการของเรา</p>
-        <a href="reviews.html" class="btn">อ่านรีวิว</a>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact">
-        <h2>ติดต่อเรา</h2>
-        <p>ข้อมูลติดต่อและสถานที่ตั้งของเรา</p>
-        <a href="contact.html" class="btn">ดูรายละเอียดการติดต่อ</a>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <div class="footer-content">
-            <p>&copy; 2025 SmartGreenTech. สงวนลิขสิทธิ์</p>
-            <p>ที่อยู่: 200/215 หมู่ 1 ต.บางเสาธง อ.บางเสาธง จ.สมุทรปราการ 10570</p>
-            <p>อีเมล: marketing@smartgreentech.co.th | โทร: 02-102-4255, 083-991-9690</p>
-        </div>
-    </footer>
 </body>
 </html>
