@@ -319,19 +319,45 @@
     margin: 0;
     color: #00FF7F; /* สีเขียวสด */
 }
-/* ส่วนกำหนดค่า QR Code */
-.qr-code img {
-    width: 120px; /* กำหนดขนาดความกว้าง */
-    height: 120px; /* กำหนดขนาดความสูง */
+/* ส่วนของ Keep in touch */
+.footer-right {
+    text-align: center;  /* จัดให้อยู่ตรงกลาง */
+    color: #00FF7F;  /* สีเขียวสด */
+}
+
+/* กำหนดสไตล์ให้กับหัวข้อ */
+.footer-right h3 {
+    margin-bottom: 15px;
+    font-size: 1.5em;
+}
+
+/* การตั้งค่าการแสดงผลโซเชียลมีเดีย */
+.socials {
+    display: flex;
+    flex-direction: column; /* จัดให้อยู่ในแนวตั้ง */
+    align-items: center;
+}
+
+/* ตั้งค่าภาพ QR Code */
+.qr-code {
+    width: 120px; 
+    height: 120px;
     margin-bottom: 10px;
 }
 
-/* ไอคอน Facebook */
+/* ตั้งค่าไอคอน Facebook */
 .facebook-icon {
     width: 40px;
     height: 40px;
     margin-top: 10px;
+    transition: transform 0.2s;
 }
+
+/* เอฟเฟกต์เมื่อเลื่อนเมาส์ไปวางบนไอคอน Facebook */
+.facebook-icon:hover {
+    transform: scale(1.1); /* ขยายขนาดเล็กน้อย */
+}
+
 
 
 
