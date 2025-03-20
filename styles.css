@@ -198,6 +198,32 @@
     border-radius: 5px;
     transition: transform 0.3s;
 }
+/* ส่วนของแถบสีเขียว */
+.contact-banner {
+    padding: 60px 0;
+    background-color: #006400; /* สีเขียว */
+    color: white;
+    text-align: center;
+}
+
+.contact-banner h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.contact-banner button {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-banner button:hover {
+    background-color: #00FF7F; /* สีเขียวอ่อน */
+}
 
 .image-gallery img:hover {
     transform: scale(1.05);
