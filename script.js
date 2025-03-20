@@ -1,16 +1,14 @@
 let currentSlide = 0;
 
-function moveSlide(direction) {
+function showSlide() {
     const slides = document.querySelector('.slides');
     const totalSlides = document.querySelectorAll('.slide').length;
 
-    currentSlide += direction;
-
-    if (currentSlide < 0) {
-        currentSlide = totalSlides - 1;
-    } else if (currentSlide >= totalSlides) {
-        currentSlide = 0;
-    }
+    currentSlide++;
+    if (currentSlide >= totalSlides) currentSlide = 0;
 
     slides.style.transform = `translateX(-${currentSlide * 100}%)`;
 }
+
+// สไลด์อัตโนมัติทุก ๆ 3 วินาที
+setInterval(showSlide, 3000);
