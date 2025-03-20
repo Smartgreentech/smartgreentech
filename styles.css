@@ -2,7 +2,7 @@
 <style>
     .banner {
     width: 100%;
-    max-width: 1500px; /* สามารถปรับค่าได้ตามต้องการ */
+    max-width: 1600px; /* ปรับตามที่คุณต้องการ */
     height: 700px; 
     display: flex;
     align-items: center;
@@ -12,6 +12,7 @@
     overflow: hidden;
     border-radius: 0px;
 }
+
 
 
 
