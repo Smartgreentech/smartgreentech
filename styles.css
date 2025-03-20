@@ -228,4 +228,60 @@
 .image-gallery img:hover {
     transform: scale(1.05);
 }
+/* Section: Footer */
+.footer {
+    background-color: #333; /* สีพื้นหลังสีเทาเข้ม */
+    padding: 40px 0;
+    color: white;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.footer-left, .footer-center, .footer-right {
+    flex: 1;
+    padding: 0 20px;
+}
+
+.footer-logo {
+    width: 60px;
+    margin-bottom: 10px;
+}
+
+.footer-left h3, .footer-center h3, .footer-right h3 {
+    color: #00FF7F; /* สีเขียวอ่อน */
+    margin-bottom: 10px;
+}
+
+.footer-left button {
+    background-color: #006400; /* สีเขียว */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.footer-left button:hover {
+    background-color: #00FF7F; /* สีเขียวอ่อน */
+}
+
+.footer-right .qr-code {
+    width: 120px;
+    margin-bottom: 10px;
+}
+
+.footer-bottom {
+    background-color: #222;
+    padding: 10px;
+    margin-top: 20px;
+    font-size: 0.8em;
+}
 
