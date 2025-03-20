@@ -230,10 +230,9 @@
 }
 /* Section: Footer */
 .footer {
-    background-color: #333; /* สีพื้นหลังสีเทาเข้ม */
-    padding: 40px 0;
+    background-color: #333;
+    padding: 50px 0;
     color: white;
-    text-align: center;
 }
 
 .footer-content {
@@ -250,17 +249,21 @@
 }
 
 .footer-logo {
-    width: 80px; /* ขนาดโลโก้ */
+    width: 100px;
     margin-bottom: 10px;
 }
 
 .footer-left h3, .footer-center h3, .footer-right h3 {
-    color: #00FF7F; /* สีเขียวอ่อน */
-    margin-bottom: 10px;
+    color: #00FF7F;
+    margin-bottom: 15px;
+}
+
+.footer-left p, .footer-center p {
+    line-height: 1.6;
 }
 
 .footer-left button {
-    background-color: #006400; /* สีเขียวเข้ม */
+    background-color: #006400;
     color: white;
     padding: 10px 20px;
     border: none;
@@ -271,7 +274,13 @@
 }
 
 .footer-left button:hover {
-    background-color: #00FF7F; /* สีเขียวอ่อนเมื่อเอาเมาส์ไปวาง */
+    background-color: #00FF7F;
+}
+
+.footer-right .socials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .footer-right .qr-code {
@@ -280,11 +289,19 @@
     margin-bottom: 10px;
 }
 
+.footer-right .facebook-icon {
+    width: 40px;
+    height: 40px;
+    margin-top: 10px;
+}
+
 .footer-bottom {
     background-color: #222;
     padding: 10px;
+    text-align: center;
     margin-top: 20px;
     font-size: 0.8em;
 }
+
 
 
