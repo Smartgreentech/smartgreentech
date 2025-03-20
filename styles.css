@@ -1,12 +1,9 @@
-<link rel="stylesheet" href="styles.css">
-<style>
-    .banner {
-    width: 100%;
-    max-width: 1920px;
+.banner {
+    width: 100vw;
     height: 700px; 
     overflow: hidden;
     position: relative;
-    margin: auto;
+    margin: 0 auto;
 }
 
 .slides {
@@ -24,8 +21,3 @@
     height: 700px;
     object-fit: cover;
 }
-
-
-
-
-</style>
